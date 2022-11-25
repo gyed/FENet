@@ -3,6 +3,29 @@ FENet
   
 Code for [FENet: A Frequency Extraction Network for Obstructive Sleep Apnea Detection](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9320528).
 
+Abstract
+-
+Obstructive Sleep Apnea (OSA) is a highly prevalent but inconspicuous disease that seriously jeopardizes the health of human beings. Polysomnography (PSG), the gold standard of detecting OSA, requires multiple specialized sensors for signal collection, hence patients have to physically visit hospitals and bear the costly treatment for a single detection. Recently, many single-sensor alternatives have been proposed to improve the cost efficiency and convenience. Among these methods, solutions based on RR-interval (i.e., the interval between two consecutive pulses) signals reach a satisfactory balance among comfort, portability and detection accuracy. 
+
+In this paper, we advance RR-interval based OSA detection by considering its real-world practicality from energy perspectives. As photoplethysmogram (PPG) pulse sensors are commonly equipped on smart wrist-worn wearable devices (e.g., smart watches and wristbands), the energy efficiency of the detection model is crucial to fully support an overnight observation on patients. This creates challenges as the PPG sensors are unable to keep collecting continuous signals due to the limited battery capacity on smart wrist-worn devices. Therefore, we propose a novel Frequency Extraction Network (FENet), which can extract features from different frequency bands of the input RR-interval signals and generate continuous detection results with downsampled, discontinuous RR-interval signals. With the help of the one-to-multiple structure, FENet requires only one-third of the operation time of the PPG sensor, thus sharply cutting down the energy consumption and enabling overnight diagnosis. Experimental results on real OSA datasets reveal the state-of-the-art performance of FENet.
+
+
+
+
+
+Architecture
+-
+
+![image](./Overview1.png)
+
+
+
+
+
+
+Reference
+-
+```
 @article{ye2021fenet,
   title={FENet: a frequency extraction network for obstructive sleep apnea detection},
   author={Ye, Guanhua and Yin, Hongzhi and Chen, Tong and Chen, Hongxu and Cui, Lizhen and Zhang, Xiangliang},
@@ -12,6 +35,5 @@ Code for [FENet: A Frequency Extraction Network for Obstructive Sleep Apnea Dete
   pages={2848--2856},
   year={2021},
   publisher={IEEE}
-}
-
-![image](./Overview1.png)
+} 
+```
