@@ -23,7 +23,7 @@ Architecture
 
 
 
-Reference
+Cite Our Paper
 -
 ```
 @article{ye2021fenet,
